@@ -7,15 +7,17 @@ public class Main {
        String test = StringUtils.upperCase("Lowercasetouppercase");
         System.out.println(test);
 
-      class Interact {
-          public static void main(String[] args) {
-              Scanner scanner = new Scanner(System.in);
-              System.out.println("Enter something!");
-              String test2 = StringUtils.reverse("");
-              System.out.println(test2);
-          }
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        boolean isNumber = StringUtils.isNumeric(input);
+        String swapCase = StringUtils.swapCase(input);
+        String backwards = StringUtils.reverse(input);
 
-      }
+        System.out.println(isNumber);
+        System.out.println(swapCase);
+        System.out.println(backwards);
+
+
 //    int userInput;
 
     }
